@@ -31,4 +31,3 @@ Pour cet exercice, plusieurs types de champs de saisie HTML5 (`<input type="..."
 ## 🛠️ Technologies Utilisées
 
 - **HTML5** (Sémantique et formulaires enrichis)
-- **CSS3** (Stylisation et responsive design)
