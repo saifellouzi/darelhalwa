@@ -23,7 +23,7 @@
             <li><a href="index.html#produits">Nos produits</a></li>
             <li><a href="index.html#services">Nos services</a></li>
             <li><a href="carte.html">Carte des prix</a></li>
-            <li><a href="commander.html">Commander</a></li>
+            <li><a href="commande.html">Commander</a></li>
             <li><a href="index.html#contact">Contact</a></li>
         </ul>
     </nav>
@@ -60,7 +60,7 @@
                 <p>
                     <label for="code_postal">Code postal : </label>
                     <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{4}" 
-                           title="Code postal de 4 chiffres" required>
+                           maxlength="4" title="Code postal de 4 chiffres" required>
                 </p>
 
                 <p>
@@ -101,8 +101,7 @@
 
                 <p>
                     <label for="date">Date de retrait : </label>
-                    <!-- Date minimale fixée au 15/08/2026 selon les tests du TP -->
-                    <input type="date" id="date" name="date" min="2026-08-15" required>
+                    <input type="date" id="date" name="date" min="2026-09-01" required>
                 </p>
 
                 <p>
@@ -162,13 +161,14 @@
 
             </fieldset>
 
-            <!-- Étape 6 : Boutons placés en fin de formulaire, hors des fieldsets -->
-            <p>
-                <button type="submit">Envoyer ma commande</button>
-                <button type="reset">Tout effacer</button>
-                <!-- Bouton pour la Question 7 -->
-                <button type="submit" formnovalidate>Envoyer sans valider</button>
-            </p>
+            <fieldset>
+                <legend>Confirmation</legend>
+                <p>
+                    <button type="submit">Envoyer ma commande</button>
+                    <button type="reset">Tout effacer</button>
+                    <button type="submit" formnovalidate>Envoyer sans valider</button>
+                </p>
+            </fieldset>
 
         </form>
     </main>
@@ -179,4 +179,10 @@
             <p>Suivez-nous :</p>
             <ul>
                 <li><a href="https://www.facebook.com/darelhalwa" target="_blank" rel="noopener">Facebook</a></li>
-                <li><a href="https://www.instagram.com/darelhalwa" target="_blank"
+                <li><a href="https://www.instagram.com/darelhalwa" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
