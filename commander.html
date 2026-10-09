@@ -38,17 +38,22 @@
                 
                 <p>
                     <label for="Nom">Nom : </label>
-                    <input type="text" id="Nom" name="Nom" required minlength="2">
+                    <input type="text" id="Nom" name="Nom" minlength="2">
                 </p>
 
                 <p>
                     <label for="Prenom">Prénom : </label>
-                    <input type="text" id="Prenom" name="Prenom" required minlength="2">
+                    <input type="text" id="Prenom" name="Prenom" minlength="2">
                 </p>
 
                 <p>
                     <label for="mail">Adresse électronique : </label>
                     <input type="email" id="mail" name="mail" placeholder="vous@exemple.tn" required>
+                </p>
+
+                <p>
+                    <label for="reseau">Site web ou page Instagram : </label>
+                    <input type="url" id="reseau" name="reseau" placeholder="https://instagram.com/votre_compte">
                 </p>
 
                 <p>
@@ -105,6 +110,11 @@
                 </p>
 
                 <p>
+                    <label for="heure">Heure de retrait souhaitée : </label>
+                    <input type="time" id="heure" name="heure">
+                </p>
+
+                <p>
                     <label for="nbre">Nombre de parts : </label>
                     <input type="number" id="nbre" name="nbre" min="6" max="100" step="2" value="12">
                 </p>
@@ -143,14 +153,17 @@
                     <label for="photo">Photo de modèle (images uniquement) : </label>
                     <input type="file" id="photo" name="photo" accept="image/*">
                 </p>
-
                 <p>
-                    <label for="decors">Langages de décoration :</label><br>
-                    <select multiple size="4" id="decors" name="decors[]">
-                        <option value="fleurs">Fleurs en pâte à sucre</option>
-                        <option value="fruits">Fruits frais</option>
-                        <option value="chocolat">Motifs en chocolat</option>
-                        <option value="dorure">Feuille d'or comestible</option>
+                    <label for="decors">Décors souhaités :</label><br>
+                    <select multiple size="5" id="decors" name="decors[]">
+                        <optgroup label="Décors sucrés">
+                            <option value="fleurs">Fleurs en pâte à sucre</option>
+                            <option value="chocolat">Motifs en chocolat</option>
+                        </optgroup>
+                        <optgroup label="Décors frais">
+                            <option value="fruits">Fruits frais</option>
+                            <option value="dorure">Feuille d'or comestible</option>
+                        </optgroup>
                     </select>
                 </p>
 
@@ -166,7 +179,6 @@
                 <p>
                     <button type="submit">Envoyer ma commande</button>
                     <button type="reset">Tout effacer</button>
-                    <button type="submit" formnovalidate>Envoyer sans valider</button>
                 </p>
             </fieldset>
 
