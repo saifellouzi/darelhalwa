@@ -68,28 +68,6 @@ nav a {
     padding: 0.25rem;
 }
 
-nav a:link {
-    color: var(--creme);
-}
-
-nav a:visited {
-    color: #e2c98e;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    color: var(--miel);
-}
-
-nav a:active {
-    color: var(--creme);
-}
-
-main {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
 h2 {
     color: var(--chocolat);
     border-bottom: 2px solid var(--miel);
@@ -118,7 +96,6 @@ p, li {
     border: 2px solid var(--miel);
     background-color: #ffffff;
 }
-
 footer {
     margin-top: 2rem;
     padding: var(--espace);
@@ -127,7 +104,7 @@ footer {
     text-align: center;
 }
 
-footer p, footer li {
+footer p,footer li {
     color: var(--creme);
 }
 
@@ -136,30 +113,19 @@ footer ul {
     padding: 0;
 }
 
-footer a:link {
-    color: var(--miel);
-}
-footer a:visited {
-    color: #e2c98e;
-}
-footer a:hover {
-    color: var(--creme);
-    text-decoration: underline;
-}
-footer a:active {
-    color: var(--creme);
-}
-
 a:link {
     color: var(--miel);
 }
+
 a:visited {
     color: var(--pistache);
 }
+
 a:hover {
     text-decoration: underline;
     color: var(--chocolat);
 }
+
 a:active {
     color: var(--chocolat);
 }
@@ -239,10 +205,12 @@ button:hover {
     body {
         padding: 0.5rem;
     }
+
     nav ul {
         flex-direction: column;
         align-items: center;
     }
+
     .carte-info {
         width: 100%;
         margin: 1rem 0;
